@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-//import { DashboardComponent } from '../../dashboard/dashboard.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 //import { UserProfileComponent } from '../../user-profile/user-profile.component';
 //import { TableListComponent } from '../../table-list/table-list.component';
 //import { TypographyComponent } from '../../typography/typography.component';
@@ -10,7 +10,7 @@ import { Routes } from '@angular/router';
 //import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 export const LayoutRoutes: Routes = [
-//    { path: 'dashboard',      component: DashboardComponent },
+    { path: 'navbar',      component: NavbarComponent },
 //    { path: 'user-profile',   component: UserProfileComponent },
 //    { path: 'table-list',     component: TableListComponent },
 //    { path: 'typography',     component: TypographyComponent },

@@ -8,7 +8,7 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-//    { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
+    { path: '/navbar', title: 'Navbar',  icon: 'dashboard', class: '' },
 //    { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
 //    { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
 //    { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
@@ -19,7 +19,7 @@ export const ROUTES: RouteInfo[] = [
 ];
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
@@ -32,9 +32,7 @@ export class SidebarComponent implements OnInit {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
   }
   isMobileMenu() {
-      if ($(window).width() > 991) {
-          return false;
-      }
-      return true;
+      return $(window).width() <= 991;
+
   };
 }

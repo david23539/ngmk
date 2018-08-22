@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { LayoutRoutes } from './layout.routing';
-//import { DashboardComponent } from '../../dashboard/dashboard.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 //import { UserProfileComponent } from '../../user-profile/user-profile.component';
 //import { TableListComponent } from '../../table-list/table-list.component';
 //import { TypographyComponent } from '../../typography/typography.component';
@@ -12,20 +12,20 @@ import { LayoutRoutes } from './layout.routing';
 //import { NotificationsComponent } from '../../notifications/notifications.component';
 //import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
-//import { MatButtonModule, MatInputModule, MatRippleModule, MatTooltipModule } from '@angular/material';
+import { MatButtonModule, MatInputModule, MatRippleModule, MatTooltipModule } from '@angular/material';
 
 @NgModule({
   imports: [
-//    CommonModule,
+    CommonModule,
     RouterModule.forChild(LayoutRoutes),
-//    FormsModule,
-//    MatButtonModule,
-//    MatRippleModule,
-//    MatInputModule,
-//    MatTooltipModule,
+    FormsModule,
+    MatButtonModule,
+    MatRippleModule,
+    MatInputModule,
+    MatTooltipModule,
   ],
   declarations: [
-//    DashboardComponent,
+    NavbarComponent,
 //    UserProfileComponent,
 //    TableListComponent,
 //    TypographyComponent,
@@ -36,4 +36,4 @@ import { LayoutRoutes } from './layout.routing';
   ]
 })
 
-export class LayoutModule {}
+export class LayoutModule { }
