@@ -1,0 +1,12 @@
+<h1>Navbars</h1>
+<div class="col-sm-12">
+  <navbar brand="Default">
+    <navbarlist></navbarlist>
+  </navbar>
+  <navbar brand="Transparent" type="transparent">
+    <navbarlist></navbarlist>
+  </navbar>
+  <navbar *ngFor="let color of colors" brand="{{color}}" color="{{color}}">
+    <navbarlist></navbarlist>
+  </navbar>
+</div>
